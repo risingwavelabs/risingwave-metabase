@@ -32,4 +32,4 @@ jobs:
 
       - name: Build and push image
         run: |
-          ./build.sh ${{ github.event.inputs.tag }} ${{ secrets.GITHUB_TOKEN }}
+          ./build_and_push.sh ${{ github.event.inputs.tag }} ${{ secrets.GITHUB_TOKEN }}
